@@ -1,0 +1,1216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: inset;
+    box-shadow: 0px 5px 8px #53525224;
+}
+
+nav div {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.1rem;
+    justify-content: center;
+
+}
+
+nav .icon {
+    width: 11%;
+    margin-right: 1rem;
+}
+
+nav p {
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+nav div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+nav div ul li {
+    width: auto;
+    padding: auto;
+    margin-right: auto;
+}
+
+nav div ul li:active {
+    font-weight: 700;
+}
+
+nav div ul li:hover {
+    cursor: pointer;
+}
+
+.loginbtn {
+    border: solid 0.41px #545BE8;
+    border-radius: 4.12px;
+    font-family: Roboto;
+    font-size: 1rem;
+    padding: 5.35px 20.18px;
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: white;
+    color: #545BE8;
+}
+
+.loginbtn i {
+    display: none;
+}
+
+.loginbtn p {
+    display: block;
+}
+
+.loginbtn:hover {
+    border: solid 0.41px #545BE8;
+    background-color: #545BE8;
+    color: white;
+}
+
+
+.registerbtn {
+    border: solid 0.41px #545BE8;
+    border-radius: 4.12px;
+    font-family: Roboto;
+    font-size: 1rem;
+    padding: 5.35px 20.18px;
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: #545BE8;
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+}
+
+/* section 1 */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section1 .row .column {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    top: 194px;
+    justify-content: center;
+}
+
+.section1 p {
+    color: #545BE8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+.section1 p span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.section1 .row .column h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+}
+
+.section1 .row .column h1 span {
+    color: #545BE8;
+}
+
+.section1 .row .column .description {
+    color: #969696;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    width: 90%;
+}
+
+.section1 .row .column .registerbtn {
+    border: solid 0.41px #545BE8;
+    border-radius: 4.12px;
+    font-family: Roboto;
+    font-size: 1rem;
+    padding: 5.35px 20.18px;
+    margin-right: 1rem;
+    text-decoration: none;
+    width: auto;
+
+}
+
+.section1 .row .column .row {
+    justify-content: flex-start;
+}
+
+.section1 .row .column .row .videobtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+
+}
+
+.section1 .row .column .row .videobtn i {
+    color: #F0C932;
+    margin-right: 0.5rem;
+}
+
+.section1 .row .column .row .videobtn p {
+    color: #000;
+    font-weight: 700;
+}
+
+.whatWeGive {
+    background: #F5F5F5;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.whatWeGive .description {
+    padding-left: 5.5rem;
+    max-width: 32%;
+    padding-right: 3rem;
+
+}
+
+.whatWeGive .description>* {
+    margin-bottom: 1rem;
+
+}
+
+.description p:nth-child(2) {
+    color: #141E32;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.description p:nth-child(3) {
+    color: #969696;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.whatWeGive .card {
+    background: #545BE8;
+    border-radius: 1rem;
+    max-width: 18%;
+    height: 40%;
+    margin: -1rem;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.whatWeGive .card>* {
+    color: white;
+    margin-bottom: 1.3rem;
+
+}
+
+.whatWeGive .card i {
+    color: #F0C932;
+    background-color: white;
+    max-width: 19%;
+    max-height: 15%;
+    padding: 5.5% 6.2%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+
+}
+
+.whatWeGive .card h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+}
+
+.whatWeGive .card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/* section2 */
+.section2 {
+    background-image: linear-gradient(#545BE8, #272DB0);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section2 .row img {
+    background-color: #F0C932;
+    border-radius: 50%;
+}
+
+.section2 .row .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 31%;
+}
+
+.section2 .row .column>* {
+    margin: 0.2rem 4rem;
+}
+
+.section2 .row .column .highlight {
+
+    color: #F0C932;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.section2 .row .column h2 {
+
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.section2 .row .column .description {
+    color: #DDDDDD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 140%;
+}
+
+.section2 .row .column .nums {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 20%;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.section2 .row .column .nums .num {
+    color: #F0C932;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* section3 */
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 5rem;
+
+}
+
+.section3 .column {
+    max-width: 50%;
+}
+
+.section3 .row .column .row .card {
+    position: relative;
+    margin: 1rem;
+    box-shadow: 0px 10px 20px 0px #00000029;
+    border-radius: 0.5rem;
+
+}
+
+.section3 .column .row .card img {
+    width: 100%;
+
+}
+
+.section3 .column .row .card .bestCorse {
+    width: fit-content;
+    background-color: #545BE8;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.4rem;
+    position: absolute;
+    top: 6%;
+}
+
+.section3 .column .row .card .price {
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 57%;
+    right: 4%;
+}
+
+.section3 .column .row .card .info {
+    padding: 1rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    height: 50%;
+
+}
+
+.section3 .column .row .card .info .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section3 .column .row .card h3 {
+    display: inline;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    min-width: max-content;
+    font-size: 1.1rem;
+}
+
+.section3 .column .row .card .views {
+    display: inline;
+    color: #545BE8;
+    font-size: 0.7rem;
+}
+
+.section3 .column .row .card .info .content {
+    display: flex;
+    color: #969696;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.section3 .column .row .card .info .content p:nth-child(1) {
+    padding-right: 1rem;
+}
+
+.section3 .AvailableForYouSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.section3 .AvailableForYouSection>* {
+    padding: 0.5rem 0rem;
+}
+
+.section3 .AvailableForYouSection .AvailableForYou {
+    color: #545BE8;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.section3 .AvailableForYouSection h2 {
+    font-size: 2rem;
+    width: 20%;
+
+}
+
+.section3 .AvailableForYouSection .description {
+    color: #969696;
+    font-size: 1rem;
+}
+
+.section3 .AvailableForYouSection .registerbtn {
+    width: fit-content;
+    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+}
+
+/* Testimonials */
+.section3 .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3rem;
+
+}
+
+.section3 .testimonials h2 {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
+.section3 .testimonials .card {
+    padding: 3rem 2rem;
+    box-shadow: 0px 10px 20px 0px #00000029;
+    position: relative;
+    z-index: -1;
+}
+
+.section3 .testimonials .rotatedCard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 100px solid #ebe5e54f;
+    border-left: 100px solid transparent;
+
+}
+
+.section3 .testimonials .card:nth-child(1) {
+
+    margin-right: 1rem;
+}
+
+.section3 .testimonials .card .identity {
+    display: flex;
+    flex-direction: row;
+}
+
+.section3 .testimonials .card .identity img {
+    width: 11%;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.section3 .testimonials .card .identity .name {
+    font-weight: 700;
+}
+
+.section3 .testimonials .card .identity .type {
+    font-weight: 400;
+    color: #969696;
+}
+
+.section3 .testimonials .card .stars {
+    color: #F0C932;
+    margin-left: 0.5rem;
+    margin-block: 1rem;
+}
+
+.section3 .testimonials .card .description {
+    color: #b6b5b5;
+
+}
+
+/* section 4 */
+.section4 {
+    background-color: #393E46;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 2rem;
+
+}
+
+.section4 .info {
+    width: 40%;
+}
+
+.section4 .websiteName {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem 0rem 1rem;
+}
+
+.section4 .websiteName img {
+    width: 7%;
+    margin-right: 1rem;
+}
+
+.section4 .websiteName p {
+    font-weight: 700;
+}
+
+.section4 .column .description {
+    width: 80%;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: #b6b5b5;
+}
+
+.section4 .column .icons {
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+}
+
+.section4 .column .icon {
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: 0.01rem solid white;
+    color: #F5F5F5;
+    padding: 0.2rem 0.5rem;
+}
+
+.section4 .TableOfContents {
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    list-style: none;
+    width: fit-content;
+
+}
+
+.section4 .TableOfContents ul {
+    list-style: none;
+    line-height: 1.8rem;
+    padding: 0rem 1rem;
+    color: #b6b5b5;
+    width: max-content;
+}
+
+.section4 .TableOfContents li:nth-child(1) {
+    font-weight: 700;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+/* login Section */
+.loginPage {
+    background-image: linear-gradient(#545BE8, #272DB0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.loginPage h1 {
+    color: #545BE8;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.loginSection {
+
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 30%;
+
+}
+
+.loginSection>* {
+    margin-bottom: 1rem;
+}
+
+.loginSection .column {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginSection .column input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: #DDDDDD solid 0.01rem;
+    width: 100%;
+    height: 100%;
+}
+
+.loginSection .column label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.loginSection .btns {
+    width: 96%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.loginSection .btns a {
+    margin-bottom: 0.5rem;
+    padding-block: 0.5rem;
+}
+
+.loginSection .btns .cancelbtn {
+    border: solid 0.41px #6a707b;
+    border-radius: 4.12px;
+    font-family: Roboto;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    background-color: white;
+    color: #6a707b;
+}
+
+.loginSection .btns .cancelbtn:hover {
+    border: solid 0.41px #6a707b;
+    background-color: #6a707b;
+    color: white;
+}
+
+/* query */
+@media (max-width: 1200px) {
+
+    /* nav */
+    nav div {
+        width: 41%;
+
+    }
+
+    /* section1 */
+    .section1 .row .column h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+    }
+
+    .whatWeGive {
+        height: 100vh;
+    }
+
+    .whatWeGive .description {
+        padding-left: 1rem;
+
+    }
+
+    .description p:nth-child(1) {
+
+        font-size: 0.7rem;
+    }
+
+    .description p:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .description p:nth-child(3) {
+        font-size: 0.9rem;
+    }
+
+    .whatWeGive .card {
+
+        height: 42%;
+        padding: 0rem 1rem;
+    }
+
+    .whatWeGive .card i {
+        min-width: 22%;
+        min-height: 12%;
+        padding: 5.5% 6.8%;
+    }
+
+    .whatWeGive .card h2 {
+        font-size: 1rem;
+    }
+
+    .whatWeGive .card p {
+        font-size: 0.8rem;
+    }
+
+    /* section2 */
+    .section2 .row .column {
+        width: 35%;
+    }
+
+    .section2 .row .column h2 {
+        font-size: 1.5rem;
+    }
+
+    .section2 .row .column .description {
+        width: 140%;
+    }
+
+    /* section3 */
+    .section3 {
+        padding: 3rem 1rem;
+
+    }
+
+    .section3 .column .row .card .bestCorse {
+        font-size: 0.7rem;
+    }
+
+    .section3 .column .row .card .info {
+        padding: 1rem 0.7rem;
+
+    }
+
+    .section3 .column .row .card h3 {
+        font-size: 1rem;
+    }
+
+    .section3 .column .row .card .views {
+        font-size: 0.7rem;
+    }
+
+    /* Testimonials */
+    .section3 .testimonials .card .identity img {
+        width: 12%;
+    }
+
+    /* login Section */
+    .loginSection {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    /* nav */
+    nav div ul {
+        font-size: 0.8rem;
+    }
+
+    .loginbtn {
+        font-size: 0.8rem;
+    }
+
+    .registerbtn {
+
+        font-size: 0.8rem;
+
+    }
+
+    /* section1 */
+    .section1 p {
+        font-size: 0.8rem;
+    }
+
+    .section1 .row .column h1 {
+        font-size: 1.5rem;
+    }
+
+    .whatWeGive .card i {
+        min-width: fit-content;
+        min-height: 10%;
+        padding: 5.5% 6%;
+    }
+
+    /* section2 */
+    .section2 .row .column .highlight {
+        font-size: 0.8rem;
+    }
+
+    .section2 .row .column .nums {
+        margin-right: 1rem;
+    }
+
+    .section2 .row .column h2 {
+        font-size: 1.2rem;
+    }
+
+    .section2 .row .column {
+        justify-content: center;
+        width: 40%;
+    }
+
+    .section2 .row .column p {
+        font-size: 0.9rem;
+    }
+
+    /* section3 */
+    .section3 {
+        padding: 3rem 1rem;
+
+    }
+
+    .section3 .column {
+        max-width: 55%;
+    }
+
+    .section3 .column .row .card .bestCorse {
+        font-size: 0.6rem;
+    }
+
+    .section3 .column .row .card .price {
+        top: 39%;
+    }
+
+    .section3 .column .row .card .info .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section3 .AvailableForYouSection {
+        padding: 1rem 1.5rem;
+        width: 50%;
+    }
+
+    /* Testimonials */
+    .section3 .testimonials {
+        margin-top: 0.5rem;
+
+    }
+
+    .section3 .testimonials .card .identity img {
+        width: 16%;
+    }
+
+    /* section 4 */
+    .section4 {
+        align-items: baseline;
+        padding: 2rem 1rem;
+
+    }
+
+    .section4 .info {
+        width: 30%;
+    }
+
+    .section4 .websiteName {
+        align-items: center;
+    }
+
+    .section4 .column .description {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .section4 .TableOfContents {
+        font-size: 0.8rem;
+    }
+
+    /* login Section */
+    .loginSection {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav div {
+        width: 21%;
+    }
+
+    nav div ul {
+        width: fit-content;
+        font-size: 0.8rem;
+
+    }
+
+    nav div ul li {
+        min-width: fit-content;
+        padding: 1rem 0.5rem;
+        margin-right: 0.2rem;
+
+    }
+
+    nav .icon {
+        width: 30%;
+        margin-right: 0.5rem;
+    }
+
+    nav p {
+
+        display: none;
+    }
+
+    .loginbtn {
+        font-size: 0.7rem;
+        margin-right: 0rem;
+    }
+
+    .registerbtn {
+
+        display: none;
+
+    }
+
+    .whatWeGive .description {
+        padding-right: 0rem;
+
+    }
+
+    .whatWeGive .card {
+        max-width: 25%;
+        margin: 0.3rem;
+    }
+
+    .whatWeGive .card i {
+        min-width: fit-content;
+    }
+
+    /* section2 */
+
+    .section2 {
+        height: 60vh;
+    }
+
+    .section2 .row img {
+        width: 80%;
+    }
+
+    .section2 .row .column {
+        justify-content: center;
+        width: 60%;
+    }
+
+    .section2 .row .column>* {
+        margin: 1rem 0rem;
+    }
+
+    .section2 .row .column .description {
+        width: 90%;
+    }
+
+    /* section3 */
+    .section3 {
+        padding: 3rem 0rem;
+    }
+
+    .section3 .column {
+        width: fit-content;
+    }
+
+    .section3 .row .column .row .card {
+        margin: 1rem 0.5rem;
+    }
+
+    .section3 .column .row .card .bestCorse {
+        padding: 0.2rem;
+        top: 3%;
+    }
+
+    .section3 .column .row .card .price {
+        top: 31%;
+        font-size: 0.9rem;
+    }
+
+    .section3 .column .row .card .info .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section3 .column .row .card .info .content {
+        display: flex;
+    }
+
+    .section3 .column .row .card .info .content p:nth-child(1) {
+        align-items: center;
+    }
+
+    .section3 .AvailableForYouSection {
+        padding: 1rem 1.8rem;
+        width: 36%;
+    }
+
+    .section3 .AvailableForYouSection .AvailableForYou {
+        font-size: 0.7rem;
+
+    }
+
+    .section3 .AvailableForYouSection h2 {
+        font-size: 1.5rem;
+    }
+
+    .section3 .AvailableForYouSection .description {
+        font-size: 0.8rem;
+    }
+
+    .section3 .AvailableForYouSection .registerbtn {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Testimonials */
+    .section3 .testimonials .card .identity img {
+        width: 24%;
+    }
+
+    /* section4 */
+    .section4 .info {
+        width: 40%;
+    }
+
+    .section4 .websiteName {
+        align-items: center;
+    }
+
+    .section4 .websiteName img {
+        margin-right: 0.5rem;
+    }
+
+    .section4 .websiteName p {
+        font-size: 0.8rem;
+    }
+
+    .section4 .column .description {
+        width: 80%;
+        font-size: 0.7rem;
+    }
+
+    .section4 .TableOfContents {
+        font-size: 0.7rem;
+    }
+
+    .section4 .TableOfContents ul {
+        padding: 0rem 0.5rem;
+    }
+
+    /* login Section */
+
+    .loginSection {
+        width: 50%;
+
+    }
+
+    .loginSection .btns a {
+        display: inline;
+    }
+}
+
+@media (max-width: 576px) {
+    nav .icon {
+        width: 30%;
+        margin-right: 0rem;
+    }
+
+    nav p {
+        display: none;
+
+    }
+
+    nav div ul li {
+        min-width: fit-content;
+        padding: 1rem 0.3rem;
+        margin-right: 0rem;
+
+    }
+
+    .loginbtn {
+        border: solid 0.41px #545BE8;
+        font-family: Roboto;
+        font-size: 1rem;
+        padding: 5px 10px 5px 7px;
+        margin-right: 1rem;
+        text-decoration: none;
+        background-color: white;
+        color: #545BE8;
+    }
+
+    .loginbtn i {
+        display: block;
+    }
+
+    .loginbtn p {
+        display: none;
+    }
+
+    /* section1 */
+    .section1 .row .column {
+
+        top: 130px;
+    }
+
+    .whatWeGive {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .whatWeGive .description {
+        padding-left: 8rem;
+        min-width: 50%;
+    }
+
+    .description p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .description p:nth-child(3) {
+        font-size: 0.9rem;
+    }
+
+    .whatWeGive .card {
+        min-width: 30%;
+    }
+
+    /* section2 */
+    .section2 {
+        height: 50vh;
+    }
+
+    .section2 .row .column {
+        width: 90%;
+    }
+
+    .section2 .row .column .nums {
+        align-items: baseline;
+    }
+
+    .section2 .row .column .nums .num {
+        justify-content: center;
+    }
+
+    /* Testimonials */
+    .section3 .testimonials .card {
+        padding: 1rem 1rem;
+    }
+
+    .section3 .testimonials .card .identity img {
+        width: 30%;
+    }
+
+    .section3 .testimonials .card .description {
+        font-size: 0.9rem;
+    }
+
+    /* section4 */
+    .section4 {
+        padding: 2rem 5rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .section4 .info {
+        width: 100%;
+    }
+
+    .section4 .column .description {
+        width: 100%;
+    }
+
+    .section4 .column .icons {
+        justify-content: flex-start;
+    }
+
+    .section4 .TableOfContents ul {
+        padding: 0rem 1rem 0rem 0rem;
+    }
+
+    /* login Section */
+    .loginSection {
+        width: 60%;
+    }
+}
