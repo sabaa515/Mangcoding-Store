@@ -1,33 +1,34 @@
-let nums = document.querySelectorAll(".nums .num");
-let section = document.querySelector(".section2");
-let started = false;
-let startTime;
+/* increasing number */
+let nums = document.querySelectorAll('.num');
+let increasingNumbersSection = document.querySelector('.section2');
+
+let increasingStarted = false;
 
 window.onscroll = function () {
-    if (window.scrollY >= section.offsetTop) {
-        if (!started) {
-            startTime = Date.now();
-            nums.forEach((num) => startCount(num, startTime));
-        }
-        started = true;
-    }
-};
+    if (increasingStarted == false && window.scrollY >= increasingNumbersSection.offsetTop -200) {
+            console.log(window.scrollY)
 
-function startCount(el, startTime) {
-    let goal = el.dataset.goal;
-    let duration = 2000;
+        increasingStarted = true;
+        nums.forEach((num) => {
+            num.textContent = 0;
 
-    let count = setInterval(() => {
-        let currentTime = Date.now();
-        let elapsedTime = currentTime - startTime;
-        let progress = elapsedTime / duration;
+            let updateNums = () => setTimeout(() => {
+                let newValue = num.getAttribute('data-val');
+                let currentValue = +(parseInt(num.textContent));
+                let increment = newValue / 50;
+                if (currentValue < newValue) {
+                    num.textContent = Math.ceil(currentValue + increment) + " +";
+                    setTimeout(updateNums, 20);
+                }
+            }, 1);
 
-        if (progress < 1) {
-            let currentValue = Math.floor(progress * goal);
-            el.textContent = currentValue;
-        } else {
-            el.textContent = goal;
-            clearInterval(count);
-        }
-    }, 16);
+            updateNums();
+
+        });//forEach
+
+    }//if
 }
+
+/* login */
+
+/* sign up */
