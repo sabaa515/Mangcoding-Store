@@ -20,7 +20,7 @@ window.onscroll = function () {
                 }
             }, 1);
 
-            updateNums();
+            updateNums();//calling the function
 
         });//forEach
 
